@@ -1,2 +1,2 @@
 # geneExp
-code for my manuscript "Independent evolution of transcript abundance and regulatory dynamics"
+code for co-expression analysis for the paper "Independent evolution of transcript abundance and regulatory dynamics"
