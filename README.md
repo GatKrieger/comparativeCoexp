@@ -1,4 +1,4 @@
-# comparison of co-expression networks between species
+# Comparison of co-expression networks between species
 code for co-expression analysis for the paper "Independent evolution of transcript abundance and regulatory dynamics". 
 
 # Pipeline
