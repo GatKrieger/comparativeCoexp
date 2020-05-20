@@ -4,7 +4,7 @@ code for co-expression analysis for the paper "Independent evolution of transcri
 # Pipeline
 The script "compare_PCMs.m" is a pipeline that runs the other functions, coded in matlab.
 # Input file
-The input is a table of normalized read counts in excel, where each sheet contains data samples from a different species.
+The input is a table of normalized read counts in excel, where each sheet contains gene expression samples collected from a single species.
 # Test input
 "expression_per_species_test.xlsx"
 This is a subset of the data presented in the article.
