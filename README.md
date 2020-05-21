@@ -1,5 +1,5 @@
 # Comparison of co-expression networks between species
-code for co-expression analysis for the paper "Independent evolution of transcript abundance and regulatory dynamics". 
+code for co-expression analysis from the paper "Independent evolution of transcript abundance and regulatory dynamics". 
 
 # Pipeline
 The script "compare_PCMs.m" is a pipeline that runs the other functions, coded in matlab.
@@ -10,9 +10,13 @@ The input is a table of normalized read counts in excel, where each sheet contai
 This is a subset of the data presented in the article.
 Full data will be avilable soon.
 # Output files
-The similairity in co-expression pattern of a gene between species is termed regulatory similarity.
-"divT_<date>.mat" is a matlab table that lists the regulatory similarity scores of each gene in the desired comparisons.
-"ggc_<date>.mat" is a matlab struct that contains the pairwise correlation matrices (PCMs) of each species.
+"ggc_(today's_date).mat" is a matlab struct that contains:
+PCM: pairwise correlation matrix, per speices
+expCorr: a bootstrap analysis for each dataset (dataset-control)
+obsT: a table of comparative regulatory similarity score, for all pssible species comparisons
+expT: a table of the median dataset-control (of 10 permutations), per species
+nnT: nearest neighbors, per species. The pair of genes with the most similar co-expression vector.
+nnCrossSpT: cross species nearest neighbors. Taking the top n (here n=5) neighbors of gene i in species A, and pick the neighbor that shows maximal similarity to gene i in species B.
 # Pre-requisits
 Matlab
 # Citing
