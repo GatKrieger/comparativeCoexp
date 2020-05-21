@@ -1,6 +1,6 @@
 function [expCorr] = expected_corr_general_fixedN(data, Nshuff, geneThrs, ...
     expThrs, corrThrs, NCorrThrs, zeroDiag, ifFlt, Nexpected)
-global NgenesToOL corrThList
+global NgenesToOL corrThList len_allGenes
 %% expected correlation
 % Is the gene-gene correlation diverged or just noisy?
 % calculate expected correlation between two halves of the data
@@ -60,7 +60,7 @@ for i = 1:Nshuff
     PCMhalf2{i} = PCMhalf.rep2.PCM;
 end
 
-intAll = 1:6701;
+intAll = 1:len_allGenes;
 for i = 1:Nshuff
     intAll = intersect(intAll, genes{i});
 end

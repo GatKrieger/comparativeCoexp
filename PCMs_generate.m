@@ -16,7 +16,7 @@ howManyGenes(i) = length(PCMs.(F{i}).genes);
 end
 
 F = fields(PCMs);
-intG = 1:6701;
+intG = 1:len_allGenes;
 for i = 1:length(F)
     intG = intersect(intG, PCMs.(F{i}).genes);
 end

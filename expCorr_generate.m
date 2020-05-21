@@ -16,7 +16,7 @@ for i = 1:length(F)
     howManyGeneExp(i) = length(expCorr.(F{i}).genes);
 end
 
-intGExp = 1:6701;
+intGExp = 1:len_allGenes;
 for i = 1:length(F)
     intGExp = intersect(intGExp, expCorr.(F{i}).genes);
 end
