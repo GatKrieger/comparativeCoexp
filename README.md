@@ -6,17 +6,16 @@ The script "compare_PCMs.m" is a pipeline that runs the other functions, coded i
 # Input file
 The input is a table of normalized read counts in excel, where each sheet contains gene expression samples collected from a single species.
 # Test input
-"expression_per_species_test.xlsx"
-This is a subset of the data presented in the article.
-Full data will be avilable soon.
+"expression_per_species_test.xlsx"<br/>
+This is a subset of the data presented in the article. Full data will be avilable soon.
 # Output files
-"ggc_(today's_date).mat" is a matlab struct that contains:\n
-PCM: pairwise correlation matrix, per speices
-expCorr: a bootstrap analysis for each dataset (dataset-control)
-obsT: a table of comparative regulatory similarity score, for all pssible species comparisons
-expT: a table of the median dataset-control (of 10 permutations), per species
-nnT: nearest neighbors, per species. The pair of genes with the most similar co-expression vector.
-nnCrossSpT: cross species nearest neighbors. Taking the top n (here n=5) neighbors of gene i in species A, and pick the neighbor that shows maximal similarity to gene i in species B.
+"ggc_(today's_date).mat" is a matlab struct that contains:<br/>
+PCM: pairwise correlation matrix, per speices<br/>
+expCorr: a bootstrap analysis for each dataset (dataset-control)<br/>
+obsT: a table of comparative regulatory similarity score, for all pssible species comparisons<br/>
+expT: a table of the median dataset-control (of 10 permutations), per species<br/>
+nnT: nearest neighbors, per species. The pair of genes with the most similar co-expression vector<br/>
+nnCrossSpT: cross species nearest neighbors. Taking the top n (here n=5) neighbors of gene i in species A, and pick the neighbor that shows maximal similarity to gene i in species B.<br/>
 # Pre-requisits
 Matlab
 # Citing
