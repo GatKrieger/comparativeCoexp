@@ -10,7 +10,7 @@ The input is a table of normalized read counts in excel, where each sheet contai
 This is a subset of the data presented in the article.
 Full data will be avilable soon.
 # Output files
-"ggc_(today's_date).mat" is a matlab struct that contains:
+"ggc_(today's_date).mat" is a matlab struct that contains:\n
 PCM: pairwise correlation matrix, per speices
 expCorr: a bootstrap analysis for each dataset (dataset-control)
 obsT: a table of comparative regulatory similarity score, for all pssible species comparisons
